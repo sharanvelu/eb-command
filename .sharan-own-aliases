@@ -1,5 +1,5 @@
 # Directories
-alias app="cd /var/www/current/"
+alias app="cd /var/app/current/"
 
 # Laravel
 alias art="php artisan"

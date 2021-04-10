@@ -10,5 +10,4 @@ echo ". ~/.sharan_own_aliases" >> ~/.bashrc
 
 source ~/.bashrc
 
-echo -e "\n Run 'envvar' to get the environment variables...\n"
-
+envvar
