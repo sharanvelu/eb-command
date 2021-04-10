@@ -8,7 +8,7 @@ cp ~/.sharan/eb-command/.sharan-own-aliases ~/.sharan_own_aliases
 echo ". ~/.sharan_bash_aliases" >> ~/.bashrc
 echo ". ~/.sharan_own_aliases" >> ~/.bashrc
 
-sudo source ~/.bashrc
+source ~/.bashrc
 
 echo -e "\n Run 'envvar' to get the environment variables...\n"
 
