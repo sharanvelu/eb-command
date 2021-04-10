@@ -10,8 +10,10 @@ if ! grep -q ". ~/.sharan_own_aliases" ~/.bashrc; then
 	echo ". ~/.sharan_own_aliases" >> ~/.bashrc
 fi
 
+sudo chmod 777 /opt/elasticbeanstalk/deployment/env
 source ~/.bashrc
-
 sh -c "source ~/.bashrc"
+
+envvar
 
 echo -e "\nDone\n"
