@@ -13,4 +13,6 @@ fi
 sudo -H -u ec2-user bash -c 'sudo chmod 777 /opt/elasticbeanstalk/deployment/env'
 sudo -H -u ec2-user bash -c 'source ~/.bashrc'
 
+source ~/.bashrc
+
 echo -e "\nDone"
