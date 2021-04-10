@@ -1,0 +1,13 @@
+# Directories
+alias kdb="cd /var/www/current/"
+
+# Laravel
+alias art="php artisan"
+alias tinker="php artisan tinker"
+alias migrate="php artisan migrate"
+alias mf="php artisan migrate:fresh"
+alias mr="php artisan migrate:rollback"
+alias mr1="php artisan migrate:rollback --step=1"
+alias seed="php artisan db:seed"
+alias clr="php artisan optimize:clear"
+
