@@ -1,5 +1,5 @@
 # Directories
-alias kdb="cd /var/www/current/"
+alias app="cd /var/www/current/"
 
 # Laravel
 alias art="php artisan"
