@@ -4,6 +4,7 @@ echo "${BLUE}Cloning Eb-Command Git Repository...${RESET}"
 
 
 # Getting ENV variable into the EB instance
+cd /var/app/current
 sudo chmod 777 /opt/elasticbeanstalk/deployment/env
 export $(xargs -a /opt/elasticbeanstalk/deployment/env)
 
