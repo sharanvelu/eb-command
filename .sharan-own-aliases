@@ -12,4 +12,5 @@ alias seed="php artisan db:seed"
 alias clr="php artisan optimize:clear"
 
 # ENV Variables
-alias envvar="app; sudo chmod 777 /opt/elasticbeanstalk/deployment/env; export $(xargs -a /opt/elasticbeanstalk/deployment/env)"
+# alias envvar="app; sudo chmod 777 /opt/elasticbeanstalk/deployment/env; export $(xargs -a /opt/elasticbeanstalk/deployment/env)"
+alias envvar="cd /var/app/current; sudo chmod 777 /opt/elasticbeanstalk/deployment/env; export $(xargs -a /opt/elasticbeanstalk/deployment/env)"
