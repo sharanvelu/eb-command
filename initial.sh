@@ -9,5 +9,3 @@ echo ". ~/.sharan_bash_aliases" >> ~/.bashrc
 echo ". ~/.sharan_own_aliases" >> ~/.bashrc
 
 source ~/.bashrc
-
-envvar
