@@ -1,11 +1,15 @@
-git clone https://github.com/sharanvelu/eb-command.git ~/.sharan/eb-command
+echo -e "\nBegin Transaction...\n"
+# Alias Files 
+echo -e "$(curl -fsSL https://raw.githubusercontent.com/sharanvelu/eb-command/master/.sharan-own-aliases)" >> ~/.sharan_own_aliases
+echo -e "$(curl -fsSL https://raw.githubusercontent.com/sharanvelu/eb-command/master/.sharan-bash-aliases)" >> ~/.sharan_bash_aliases
 
-echo -e "\nCloned Eb-Command Git Repository...\n"
-
-cp ~/.sharan/eb-command/.sharan-bash-aliases ~/.sharan_bash_aliases
-cp ~/.sharan/eb-command/.sharan-own-aliases ~/.sharan_own_aliases
-
-echo ". ~/.sharan_bash_aliases" >> ~/.bashrc
-echo ". ~/.sharan_own_aliases" >> ~/.bashrc
+if grep -q ". ~/.sharan_bash_aliases" ~/.bashrc; then
+	echo ". ~/.sharan_bash_aliases" >> ~/.bashrc
+fi
+if grep -q ". ~/.sharan_own_aliases" ~/.bashrc; then
+	echo ". ~/.sharan_own_aliases" >> ~/.bashrc
+fi
 
 source ~/.bashrc
+
+echo -e "\nDone"
